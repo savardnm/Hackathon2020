@@ -6,6 +6,8 @@
         align-content: flex-end;
         flex-grow: 1;
         margin-bottom: fill;
+        position: absolute;
+        bottom: 0;
     }
 
     .nav {
@@ -33,6 +35,7 @@
 
     .theBigButton {
         width: 20%;
+        height: 300%;
     }
 
 
