@@ -4,11 +4,18 @@
     justify-content: center;
 }
 
+.header {
+    padding: 60px;
+    text-align:center;
+    background: #A20021;
+    color: #F9EAE1;
+    font-size: 15px;
+}
 
 body {
     color: black;
     text-align:center;
-    background-color: #f9eae1;
+    background-color: #CC8B86 ;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 
 }
