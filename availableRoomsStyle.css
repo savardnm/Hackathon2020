@@ -101,6 +101,7 @@ td:hover {
 	animation: spin 2s linear infinite;;
     position:fixed;
     margin-left:45%;
+    z-index:101;
 }
 
 @keyframes spin {
@@ -111,4 +112,8 @@ td:hover {
 img{
     max-width:90%;
     max-height: 90%;
+}
+
+a{
+    display:block;
 }
