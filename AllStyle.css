@@ -3,6 +3,7 @@ body {
     margin: 0px;
     background-color: #F9EAE1;
 }
+
 h1 {
     font-family: 'Permanent Marker', cursive;
     font-size: 50px;
@@ -21,6 +22,13 @@ text {
     height:100%
 }
 
+.header {
+    background-color:#A20021;
+    color:white;
+    margin:0;
+    height:18vh;
+}
+
 .nav:hover {
     background-color: #D7C9AA;
 }
@@ -28,6 +36,25 @@ text {
 .nav a {
     display: block;
 }
+
+.banner{
+    width:100%;
+    background-color:#A20021;
+    height:5vh;
+
+}
+
+/*.header {
+    height: 40%;
+    text-align: center;
+    background-color: #A20021;
+    color: #F9EAE1;
+    font-size: 20px;
+    margin: 0;
+    z-index:99;
+    top:5vh;
+}*/
+
 
 .flex-container-footer {
 
@@ -46,23 +73,9 @@ a {
     text-decoration: none;
 }
 
-
-button {
-    margin: 5px;
-    color: #442222;
-    background: #CC8B86;
-    min-width: 100px;
-    min-height: 50px;
-
+p {
+    margin: 0;
+    padding: 10px;
     border: 0;
-    min-font-size: 30px;
 
-}
-
-button:hover {
-    background: #DC9B96;
-}
-
-button:disabled {
-    background: #888888;
 }
