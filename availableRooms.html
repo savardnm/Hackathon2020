@@ -4,80 +4,63 @@
 <HEAD>
     <script src="ids.js"></script>
     <script src="get_availabilities.js"></script>
+    <script src="availability.js"></script>
+    <link rel="stylesheet" href="availableRoomsStyle.css">
 </HEAD>
 <h1>
     <div style="text-align: center;">Available Rooms:</div>
 </h1>
 <body>
-<div class="flex-container-table" style=": center;">
-    <table align="center">
-        <style>
-            table {
-                border-collapse: collapse;
-                border-spacing: 0px;
-                font-size: x-large;
-                border-radius: 30px;
-                border-radius: 25px;
-                padding: 20px;
-            }
+<section class="flex-container-table" style=": center;">
+    <div><a href="availableRooms.html">
+        <button class="button" onclick="lButtonClicked()" id="lButton"><</button>
+    </a>
+    </div>
+    <div>
+        <table align="center">
 
-            td, th {
-                height: 30px;
-                min-width: 200px
-            }
+            <tr>
+                <th>Room</th>
+                <th>Available For</th>
+                <th>Layout</th>
+            </tr>
+            <tr>
+                <td>
+                    <script>document.write(rooms[5]);
+                    console.log(rooms['5']);</script>
+                </td>
+                <td>
+                    <script>document.write(availHours['5']);</script>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
 
-            th {
-                border: 2px solid #422;
-                background: #A20021;
-                font-weight: bold;
-                color: #EEEEEE;
-            }
-
-            td {
-                border: 2px solid #A88;
-                background: #F9EAE1;
-                height: 100px;
-            }
-
-            tr:nth-child(odd) td {
-                background: #D7C9AA
-            }
-
-
-        </style>
-        <tr>
-            <th>Room</th>
-            <th>Available For</th>
-            <th>Layout</th>
-        </tr>
-        <tr>
-            <td><script>document.write(rooms[5]);
-            console.log(rooms['5']);</script></td>
-            <td><script>document.write(availHours['5']);</script></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-</div>
-<button class="rightTableButt">BUTTS</button>
+    <div><a href="availableRooms.html">
+        <button class="button" onclick="rButtonClicked()" id="rButton"> ></button>
+    </a>
+    </div>
+</section>
 </body>
 </html>

@@ -12,9 +12,6 @@
     margin: 0;
     padding: 0;
 }
-.flex-container-table {
-    display: flex;
-}
 
 .flex-container-middle {
     background-color: white;
