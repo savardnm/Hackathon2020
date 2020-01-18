@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="FirstPageStyle.css">
+<HEAD>
+    <script src="ids.js"></script>
+    <script src="get_availabilities.js"></script>
+</HEAD>
 <h1>
     <div style="text-align: center;">Available Rooms:</div>
 </h1>
@@ -11,26 +16,32 @@
                 border-collapse: collapse;
                 border-spacing: 0px;
                 font-size: x-large;
+                border-radius: 30px;
+                border-radius: 25px;
+                padding: 20px;
             }
 
             td, th {
-                border: 1px solid #E7B99A;
                 height: 30px;
                 min-width: 200px
             }
 
             th {
+                border: 2px solid #422;
                 background: #A20021;
                 font-weight: bold;
-                color : #EEEEEE;
+                color: #EEEEEE;
             }
 
             td {
+                border: 2px solid #A88;
                 background: #F9EAE1;
-                height : 100px;
+                height: 100px;
             }
 
-            tr:nth-child(odd) td {background: #D7C9AA}
+            tr:nth-child(odd) td {
+                background: #D7C9AA
+            }
 
 
         </style>
@@ -40,8 +51,9 @@
             <th>Layout</th>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td><script>document.write(rooms[5]);
+            console.log(rooms['5']);</script></td>
+            <td><script>document.write(availHours['5']);</script></td>
             <td></td>
         </tr>
         <tr>
