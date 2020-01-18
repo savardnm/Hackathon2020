@@ -54,7 +54,6 @@ header {
     border: none;
     color: black;
     font-size: 150%;
-    line-height: 250%;
 }
 
 
@@ -70,4 +69,11 @@ button:disabled {
 .banner {
     background: #A20021;
     height: 50px;
+}
+
+.squish{
+    margin:0;
+    padding:0;
+    font-size:75%;
+
 }

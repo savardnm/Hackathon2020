@@ -27,6 +27,11 @@
     }
 
 
+    .theBigButton {
+        width: 20%;
+    }
+
+
 }
 
 /*mobile*/
@@ -45,6 +50,7 @@
         flex-direction: column;
         align-content: center;
         position: static;
+        line-height: 250%;
 
     }
 
@@ -53,6 +59,7 @@
         width: 100%;
         right: 0;
         left: 0;
+        border-top: 1px solid #DAB8B8;
     }
 
     .blockText {
@@ -69,6 +76,11 @@
 
     .tableTime {
         width: 100%;
+    }
+
+    .theBigButton {
+        width: 80%;
+        line-height: 300%;
     }
 
 }
