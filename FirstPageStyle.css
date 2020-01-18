@@ -14,8 +14,8 @@
 
     .blockText {
 
-        margin-left: 35%;
-        margin-right: 35%;
+        padding-right: 35%;
+        padding-left: 35%;
     }
 
 }
@@ -53,8 +53,8 @@
 
     .blockText {
 
-        margin-left: 15%;
-        margin-right: 15%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }
 
@@ -99,8 +99,11 @@
 }
 
 .blockText {
+padding-top: 15px;
+    padding-bottom: 15px;
     horiz-align: center;
     text-align: justify;
+    background: #FFFFFF;
 }
 
 body {
@@ -134,4 +137,12 @@ a {
     color: black;
     font-size: 150%;
     line-height: 60px;
+}
+button:hover{
+    background: #DC9B96;
+}
+
+.banner{
+    background: #A20021;
+    height: 50px;
 }
