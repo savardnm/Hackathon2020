@@ -59,6 +59,7 @@ table {
 }
 
 td, th {
+    text-align: center;
     height: 15%;
     min-width: 1000%;
 }
