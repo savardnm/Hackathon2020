@@ -1,3 +1,5 @@
+@media screen only and (min-width:500px) {}
+
 .flex-container-footer {
     display: flex;
     flex-direction: row;
@@ -76,4 +78,5 @@ a {
     color: black;
     font-size: 150%;
     line-height: 60px;
+}
 }
