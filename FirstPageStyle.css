@@ -20,6 +20,9 @@ body {
     text-align:center;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     margin: 0;
+    background-color: #F9EAE1 ;
+    font-family: 'Raleway', sans-serif;
+
 
 }
 
@@ -37,7 +40,6 @@ a {
     text-decoration: none;
 }
 button {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
     margin-top: 2%;
     font-weight: bold;
     padding: 0 5%;
