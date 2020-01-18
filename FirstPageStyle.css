@@ -1,69 +1,9 @@
-/*desktop*/
-@media screen and (min-width: 500px) {
-
-    .flex-container-footer {
-        flex-direction: row;
-        left: 0;
-        position: fixed;
-        bottom: 0;
-        align-content: baseline;
-    }
-
-    .nav {
-        font-size: 18px;
-        width: 25%;
-    }
-
-    .blockText {
-
-        padding-right: 35%;
-        padding-left: 35%;
-    }
-
+.allContainer {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    align-content: space-evenly;
 }
-
-/*mobile*/
-@media screen and (max-width: 500px) {
-
-
-    .flex-container-middle {
-        padding: 50px;
-        flex-wrap: wrap;
-        position: static;
-
-    }
-
-    .flex-container-footer {
-
-        flex-direction: column;
-        align-content: center;
-        position: static;
-
-    }
-
-    .nav {
-        font-size: 100%;
-        width: 100%;
-        right: 0;
-        left: 0;
-    }
-
-    body {
-        position: fixed;
-    }
-
-    .blockText {
-
-        padding-left: 15%;
-        padding-right: 15%;
-    }
-
-    .allContainer {
-         overflow: scroll;
-     }
-}
-
-
 
 .flex-container-footer {
 

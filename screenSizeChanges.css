@@ -1,0 +1,55 @@
+/*desktop*/
+@media screen and (min-width: 500px) {
+
+    .flex-container-footer {
+        flex-direction: row;
+        align-content: flex-end;
+    }
+
+    .nav {
+        font-size: 18px;
+        width: 25%;
+    }
+
+    .blockText {
+
+        padding-right: 35%;
+        padding-left: 35%;
+    }
+
+}
+
+/*mobile*/
+@media screen and (max-width: 500px) {
+
+
+    .flex-container-middle {
+        padding: 50px;
+        flex-wrap: wrap;
+        position: static;
+
+    }
+
+    .flex-container-footer {
+
+        flex-direction: column;
+        align-content: center;
+        position: static;
+
+    }
+
+    .nav {
+        font-size: 100%;
+        width: 100%;
+        right: 0;
+        left: 0;
+    }
+
+    .blockText {
+
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+
+}
