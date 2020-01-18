@@ -27,18 +27,27 @@ function processResponse(xml, currentHour) {
 function getRoomAvailHours() {
 	var hoursOpen = {}
 	var today = new Date()
-	var hour = today.getHours();
-	if (hour < 10) {
-		hour = "0" + hour.toString();
-	} else {
-		hour = hour.toString();
-	}	
-	var startTime = today.getFullYear().toString() + "-" + today.getMonth().toString() + "-" + today.getDate().toString() + "T" + hour + ":00:00";
-	var endTime = today.getFullYear().toString() + "-" + (today.getMonth() + 1).toString() + "-" + today.getDate().toString() + "T" + hour + ":00:00";
+	var hour = fillZeroString(today.getHours());
+	var month = fillZeroString(today.getMonth() + 1);
+	var startDay = fillZeroString(today.getDay());
+	var endDay = fillZeroString(today.getDay() + 1);
+	
+	var startTime = today.getFullYear().toString() + "-" + month + "-" + startDay + "T" + hour + ":00:00";
+	var endTime = today.getFullYear().toString() + "-" + month + "-" + endDay + "T" + hour + ":00:00";
+	
 	Object.keys(rooms).forEach(function(key) {
 		hoursOpen[key] = getAvailability(key, startTime, endTime, today.getHours());
 	});
 	return hoursOpen;
+}
+
+function fillZeroString(date) {
+	if (date < 10) {
+		date = "0" + date.toString();
+	} else {
+		date = date.toString();
+	}
+	return date;
 }
 
 var availHours = getRoomAvailHours();
