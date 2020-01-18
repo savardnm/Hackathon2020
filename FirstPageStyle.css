@@ -3,8 +3,25 @@
     flex-direction: row;
     justify-content: center;
     justify-content: space-evenly;
-    vertical-align: bottom;
     background-color:#F9EAE1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.flex-container-middle {
+    background-color: white;
+    justify-content: center;
+    padding: 60px;
+}
+
+.nav {
+    background-color: #F9EAE1;
+    width: 25%;
+}
+
+.nav:hover {
+    background-color: #D7C9AA;
 }
 
 .header {
@@ -20,8 +37,8 @@ body {
     text-align:center;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     margin: 0;
-    background-color: #F9EAE1 ;
     font-family: 'Raleway', sans-serif;
+    background-color: #F9EAE1;
 
 
 }
