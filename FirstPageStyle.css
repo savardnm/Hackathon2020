@@ -25,17 +25,16 @@
 }
 
 .header {
-    padding: 60px;
+    padding: 40px;
     text-align:center;
     background: #A20021;
     color: #F9EAE1;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 body {
     color: black;
     text-align:center;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
     margin: 0;
     font-family: 'Raleway', sans-serif;
     background-color: #F9EAE1;
