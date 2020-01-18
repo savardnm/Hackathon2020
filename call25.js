@@ -17,15 +17,23 @@ function getAllRoomsOpenLength(startDate, endDate) {
 	startDate = convertToString(startDate);
 	endDate = convertToString(endDate);
 
+	var responses = 0;
 	Object.keys(rooms).forEach(function(key) {
 		requestBookings(key, startDate, endDate)
 			.then(function(result) {
 				roomHours[key] = processResult(result, startHour, key);	
+				responses++;
 			})
 			.catch(function() {
 				roomHours[key] = 0;
+				responses++;
 			});
 	});
+	// Wait for all responses in.
+	while (responses < Object.keys(rooms).length) {
+		
+	}
+	document.getElementById("loadingSymbol").style.visibility = "hidden";
 	return roomHours;
 }
 

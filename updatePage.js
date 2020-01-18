@@ -1,8 +1,7 @@
 var TABLE_ROWS = 5;
 
 function fillTable() {
-	var tomorrow = new Date();
-	var roomsOpen = getAllRoomsOpenLength(new Date(), tomorrow.setDate(tomorrow.getDate() + 1));
+	var roomsOpen = getAllRoomsOpenLength(new Date(), new Date(new Date().getTime() + 24 * 60 * 60 * 1000));
 	var table = []
 	
 	var count = 0;
@@ -17,4 +16,17 @@ function fillTable() {
 		}
 	}
 	return table;
+}
+
+var TABLE_PAGES = fillTable();
+var CURRENT_PAGE = 0;
+
+function updateListing() {
+	var page = TABLE_PAGES[CURRENT_PAGE];
+	var count = 1;
+	for (var key in Object.keys(page)) {
+		document.getElementById("roomR" + count).innerHTML = rooms[key];
+		document.getElementById("hoursR" + count).innerHTML = page[key];
+		count++;
+	}
 }

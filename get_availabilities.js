@@ -59,6 +59,3 @@ function fillZeroString(date) {
 	}
 	return date;
 }
-
-
-var availHours = getRoomAvailHours();
