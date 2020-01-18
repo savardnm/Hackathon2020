@@ -13,7 +13,7 @@ function requestBookings(id, startDate, endDate) {
 
 function getAllRoomsOpenLength(startDate, endDate) {
 	var roomHours = {};
-	startHour = fillZeroesString(startDate.getHours());
+	var startHour = parseInt(startDate.getHours());
 	startDate = convertToString(startDate);
 	endDate = convertToString(endDate);
 
@@ -37,12 +37,12 @@ function processResult(xml, startHour, id) {
 	if (reservations.length == 1) {
 		return 24;
 	}
-	var bookedTime = xml.getElementByTagName("r25:reservation_start_dt")[0].childnodes[0].nodeValue;
+	var bookedTime = reservations[0].children['2'].innerHTML;
 	var bookedTime = parseInt(bookedTime.substr(bookedTime.indexOf("T") + 1, 2));
 	if (bookedTime < startHour) {
 		return (24 - startHour) + bookedTime;
 	}
-	return bookedTime - currentHour;
+	return bookedTime - startHour;
 }
 
 function convertToString(date) {
