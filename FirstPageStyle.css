@@ -1,3 +1,9 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
 body {
     color: black;
     text-align:center;
@@ -5,9 +11,14 @@ body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 
 }
+
 h1 {
     font-family: 'Permanent Marker', cursive;
     font-size: 50px ;
+}
+
+header {
+    background-color: #f9eae1;
 }
 
 div {
