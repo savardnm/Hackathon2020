@@ -48,13 +48,14 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     font-size: x-large;
-    border-radius: 30px;
-    padding: 20px;
+    border-radius: 10%;
+    padding: 3%;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 td, th {
-    height: 30px;
-    min-width: 200px
+    height: 15%;
+    min-width: 1000%;
 }
 
 th {

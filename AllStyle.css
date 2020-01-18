@@ -7,3 +7,22 @@ h1 {
     font-family: 'Permanent Marker', cursive;
     font-size: 50px;
 }
+
+
+text {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.nav {
+    background-color: #F9EAE1;
+    margin: 0;
+    line-height: 250%;
+}
+
+.nav:hover {
+    background-color: #D7C9AA;
+}
+
+.nav a {
+    display: block;
+}
