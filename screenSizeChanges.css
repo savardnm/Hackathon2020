@@ -26,6 +26,10 @@
 
     }
 
+    .button {
+        font-size: 550%;
+    }
+
 
 }
 
@@ -69,6 +73,10 @@
 
     .tableTime {
         width: 100%;
+    }
+
+    .button {
+        font-size: 200%;
     }
 
 }
