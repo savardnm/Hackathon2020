@@ -83,15 +83,14 @@ td:hover {
 }
 
 .loader {
-	margin: auto;
 	border: 12px solid #f3f3f3; /* Light grey */
 	border-top: 12px solid #3498db; /* Blue */
 	border-radius: 50%;
-	width: 60px;
-	height: 60px;
-	animation: spin 2s linear infinite;
-	margin-bottom: 30px;
+	width: 20%;
+	height: 20%;
+	animation: spin 2s linear infinite;;
     position:fixed;
+    margin-left:50%;
 }
 
 @keyframes spin {
