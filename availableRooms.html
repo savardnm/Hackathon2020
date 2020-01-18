@@ -17,12 +17,11 @@
 <h1>
     Available Rooms:
 </h1>
-	<div class="loader" id="loadingSymbol"></div>
 <body>
+	<div class="loader" id="loadingSymbol"></div>
 <section class="flex-container-table" style=": center;">
-    <div><a href="availableRooms.html">
-        <button class="button" onclick="lButtonClicked()" id="lButton"><</button>
-    </a>
+    <div>
+        <button class="button" onclick="lButtonClicked()" id="lButton" disabled><</button>
     </div>
     <div>
         <table>
@@ -60,9 +59,8 @@
         </table>
     </div>
 
-   <div><a href="availableRooms.html">
-        <button class="button" onclick="rButtonClicked()" id="rButton"> ></button>
-    </a>
+   <div>
+        <button class="button" onclick="rButtonClicked()" id="rButton" disabled> ></button>
     </div>
 </section>
 <a href="index.html">

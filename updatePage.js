@@ -5,7 +5,8 @@ var roomsOpen = getAllRoomsOpenLength(new Date(), new Date(new Date().getTime() 
 
 function checkAllResponsesIn(responseCount) {
 	if (responseCount == Object.keys(rooms).length) {
-		document.getElementById("loadingSymbol").style.visibility = "hidden";
+		var loadSymbol = document.getElementById("loadingSymbol");
+		loadSymbol.parentNode.removeChild(loadSymbol);
 		roomsOpen = fillTable();
 		updateListing();
 	}
@@ -37,5 +38,8 @@ function updateListing() {
 		document.getElementById("roomR" + count).innerHTML = rooms[key];
 		document.getElementById("hoursR" + count).innerHTML = page[key] + " hours";
 		count++;
+	}
+	if (roomsOpen.length > 1) {
+		document.getElementById('rButton').disabled = false;
 	}
 }
