@@ -1,22 +1,38 @@
-
+h1{
+    font-size: xx-large;
+}
 .flex-container-table {
+
     display: flex;
-    justify-content: space-evenly;
-    margin: 0px;
+    justify-content: center;
+    bottom: 0;
+    background: #442222;
 }
-.button{
-    font-size: 100px;
+button{
+    margin: 5px;
     color: #442222;
-    justify-content: space-evenly;
-    margin: 0px;
-    padding: 100px 50px;
-    border-radius: 30px;
     background: #CC8B86;
-    border-color: #442222;
-    position: relative;
+    margin: 0px;
+    min-width: 100px;
+    min-height: 50px;
+    margin: 5px;
+
+    border: 0px;
+    min-font-size: 30px;
 
 }
-.button:hover{
+
+.button {
+    margin:0px;
+    font-size: 100px;
+    justify-content: space-evenly;
+    padding: 100px 50px;
+    position: relative;
+    height: 540px;
+
+}
+
+.button:hover {
     background: #DC9B96;
 }
 
@@ -35,19 +51,28 @@ td, th {
 }
 
 th {
-    border: 2px solid #422;
+    border: 0px solid #422;
     background: #A20021;
     font-weight: bold;
     color: #EEEEEE;
 }
 
 td {
-    border: 2px solid #A88;
-    background: #F9EAE1;
+    border: 0px solid #A88;
+    background: #FFFFFF;
     height: 100px;
 }
 
 tr:nth-child(odd) td {
-    background: #D7C9AA
+    background: #F9EAE1
 }
+
+tr:nth-child(odd) td:hover {
+    background: #E9DAD1;
+}
+
+td:hover {
+    background: #EEDEDE;
+}
+
 
