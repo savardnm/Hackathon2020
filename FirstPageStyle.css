@@ -99,7 +99,7 @@
 }
 
 .blockText {
-padding-top: 15px;
+    padding-top: 15px;
     padding-bottom: 15px;
     horiz-align: center;
     text-align: justify;
@@ -138,11 +138,12 @@ a {
     font-size: 150%;
     line-height: 60px;
 }
-button:hover{
+
+button:hover {
     background: #DC9B96;
 }
 
-.banner{
+.banner {
     background: #A20021;
     height: 50px;
 }
