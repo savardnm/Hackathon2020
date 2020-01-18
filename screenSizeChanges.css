@@ -7,6 +7,8 @@
         flex-grow: 1;
         margin-bottom: fill;
         border-top: 1px solid #DAB8B8;
+        position: absolute;
+        bottom: 0;
     }
 
     .nav {
@@ -35,6 +37,7 @@
     .theBigButton {
         width: 20%;
         margin-top: 2%;
+        height: 300%;
     }
 
 
