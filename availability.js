@@ -28,8 +28,8 @@ function clickStudyNow() {
 }
 
 function clickStudyLater() {
-	var date = document.getElementById("daySelect").value;
-	var hour = document.getElementById("hourSelect").value;
-	window.sessionStorage.setItem("runningDate", JSON.stringify(new Date(date.getFullYear(), date.getMonth(), date.getDate(), hour, 0, 0)));
+	var date = new Date(document.getElementById("daySelect").value);
+	var hour = parseInt(document.getElementById("hourSelect").value);
+	window.sessionStorage.setItem("runningDate", JSON.stringify(new Date(date.getFullYear(), date.getMonth(), date.getDate() + 1, hour, 0, 0)));
 	window.location.href = "availableRooms.html";
 }
