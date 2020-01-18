@@ -1,7 +1,8 @@
 function getAvailability(id, startTime, endTime, currentHour) {
 	var xhr = new XMLHttpRequest();
 	var url = live_base_url + id + live_start_time_url + startTime + live_end_time_url + endTime + live_modifiers_url; 
-	
+	console.log(id);
+	//window.prompt("please enter url","url");
 	xhr.open("GET", url, true);
 	xhr.send();
 	xhr.onloadend = function () {
@@ -9,8 +10,10 @@ function getAvailability(id, startTime, endTime, currentHour) {
 			return processResponse(xhr.responseXML, currentHour);
 		}
 	};
+	xhr.onError = function () {
+		console.log("Request Failed");
+	};
 }
-
 function processResponse(xml, currentHour) {
 	var reservations = xml.getElementsByTagName("r25:space_reservation");
 	if (reservations.length == 1) {
