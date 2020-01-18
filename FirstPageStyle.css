@@ -6,7 +6,6 @@
 }
 
 
-
 .flex-container-middle {
 
     display: flex;
@@ -16,8 +15,6 @@
     padding: 2%;
     min-height: 100%;
 }
-
-
 
 
 .header {
@@ -49,7 +46,6 @@ header {
 }
 
 
-
 .theBigButton {
     margin-top: 2%;
     font-weight: bold;
@@ -61,9 +57,11 @@ header {
     line-height: 250%;
 }
 
+
 button:hover {
     background: #DC9B96;
 }
+
 
 button:disabled {
 	background: #666666
