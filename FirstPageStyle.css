@@ -1,5 +1,5 @@
 /*desktop*/
-@media screen and (min-width:500px) {
+@media screen and (min-width: 500px) {
 
     .flex-container-footer {
         flex-direction: row;
@@ -19,8 +19,9 @@
     }
 
 }
+
 /*mobile*/
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
 
 
     .flex-container-middle {
@@ -47,6 +48,7 @@
         right: 0;
         left: 0;
     }
+
     body {
         position: fixed;
     }
@@ -60,10 +62,9 @@
 
 .flex-container-footer {
     display: flex;
-    justify-content: center;
     justify-content: space-evenly;
     align-content: stretch;
-    background-color:#F9EAE1;
+    background-color: #F9EAE1;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -74,6 +75,7 @@
     justify-content: center;
     padding: 60px;
 }
+
 /*Desktop */
 .nav {
     background-color: #F9EAE1;
@@ -86,13 +88,13 @@
     background-color: #D7C9AA;
 }
 
-.nav a{
+.nav a {
     display: block;
 }
 
 .header {
     padding: 40px;
-    text-align:center;
+    text-align: center;
     background: #A20021;
     color: #F9EAE1;
     font-size: 20px;
@@ -102,9 +104,10 @@
     horiz-align: center;
     text-align: justify;
 }
+
 body {
     color: black;
-    text-align:center;
+    text-align: center;
     margin: 0;
     font-family: 'Raleway', sans-serif;
     background-color: #F9EAE1;
@@ -112,7 +115,7 @@ body {
 
 h1 {
     font-family: 'Permanent Marker', cursive;
-    font-size: 50px ;
+    font-size: 50px;
 }
 
 header {
@@ -123,6 +126,7 @@ a {
     color: black;
     text-decoration: none;
 }
+
 .theBigButton {
     margin-top: 2%;
     font-weight: bold;
@@ -133,4 +137,5 @@ a {
     font-size: 150%;
     line-height: 60px;
 }
+
 }
