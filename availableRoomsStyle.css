@@ -6,11 +6,9 @@ h1 {
 .flex-container-table {
 
     display: flex;
-    justify-content: center;
     bottom: 0;
     background: #442222;
-    width: 100%;
-    align-content: center;
+    justify-content: center;
 
 }
 

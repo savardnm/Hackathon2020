@@ -20,8 +20,10 @@
     }
 
     .flex-container-table{
+        width: 75%;
 
     }
+
 
 }
 
@@ -52,16 +54,18 @@
     }
 
     .blockText {
-
         padding-left: 15%;
         padding-right: 15%;
     }
 
     .flex-container-table {
-        max-width: 500px;
+        width: 100%;
         max-font-size: 12px;
     }
 
+    .tableTime {
+        width: 100%;
+    }
 
 
 

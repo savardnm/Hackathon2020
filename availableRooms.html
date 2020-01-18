@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="FirstPageStyle.css">
 <head>
     <title>Take That Laurie!</title>
     <script src="ids.js"></script>
@@ -25,47 +24,49 @@
 </h1>
 <div class="greyed" id="grey"></div>
 <div class="loader" id="loadingSymbol"></div>
-<!--
-<div class="hiddenImage"><img id="imgR1"></div>
-<div class="hiddenImage"><img id="imgR2"></div>
-<div class="hiddenImage"><img id="imgR3"></div>
-<div class="hiddenImage"><img id="imgR4"></div>
-<div class="hiddenImage"><img id="imgR5"></div>
--->
-<body>
+
+<body style="width:100%; align-content: center">
 <section class="flex-container-table">
-    <div class="flex-button">
+    <div>
         <button class="button" onclick="lButtonClicked()" id="lButton" disabled><</button>
     </div>
-    <div style="width:100%">
+    <div style="width:100%;">
 
-        <table style="font-family: 'Gloria Hallelujah', cursive;" style="width:100%">
+        <table>
 
             <tr>
                 <th>Room</th>
                 <th>Available For</th>
-            </tr>
-            <tr id="R1" onclick="openImage(1)">
-                <td id="roomR1"></td>
-                <td id="hoursR1"></td>
-            </tr>
-            <tr id="R2">
-                <td id="roomR2"></td>
-                <td id="hoursR2"></td>
-            </tr>
-            <tr id="R3">
-                <td id="roomR3"></td>
-                <td id="hoursR3"></td>
+                <th>Layout</th>
             </tr>
             <tr>
-                <td id="roomR4"></td>
-                <td id="hoursR4"></td>
+                    <td id="roomR1"></td>
+                    <td id="hoursR1"></td>
+                    <td><img id="imgR1"></td>
+            </tr>
+            <tr>
+                    <td id="roomR2"></td>
+                    <td id="hoursR2"></td>
+                    <td><img id="imgR2"></td>
+            </tr>
+            <tr>
+                    <td id="roomR3"></td>
+                    <td id="hoursR3"></td>
+                    <td><img id="imgR3"></td>
+            </tr>
+            <tr>
+                    <td id="roomR4"></td>
+                    <td id="hoursR4"></td>
+                    <td><img id="imgR4"></td>
             </tr>
 
-            <tr id="R5">
+            <tr>
                 <td id="roomR5"></td>
                 <td id="hoursR5"></td>
+                <td><img id="imgR5"></td>
+
             </tr>
+            </a>
         </table>
     </div>
 
@@ -73,6 +74,7 @@
         <button class="button" onclick="rButtonClicked()" id="rButton" disabled> ></button>
     </div>
 </section>
+
 <section class="flex-container-footer">
     <div class="nav"><a href="index.html">Home</a></div>
     <div class="nav"><a href="http://wpi.libcal.com/spaces?lid=914&gid=2331"> Reserve Library Tech Suite </a></div>
