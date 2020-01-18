@@ -14,18 +14,6 @@ h1 {
 
 }
 
-button {
-    margin: 5px;
-    color: #442222;
-    background: #CC8B86;
-    min-width: 100px;
-    min-height: 50px;
-
-    border: 0;
-    min-font-size: 30px;
-
-}
-
 .button {
     margin: 0;
     display: block;
@@ -37,13 +25,6 @@ button {
 
 }
 
-button:hover {
-    background: #DC9B96;
-}
-
-button:disabled {
-    background: #666666;
-}
 
 table {
     flex-grow: 1;

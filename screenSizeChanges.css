@@ -1,11 +1,12 @@
 /*desktop*/
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
 
     .flex-container-footer {
         flex-direction: row;
         align-content: flex-end;
         flex-grow: 1;
         margin-bottom: fill;
+        border-top: 1px solid #DAB8B8;
     }
 
     .nav {
@@ -33,6 +34,7 @@
 
     .theBigButton {
         width: 20%;
+        margin-top: 2%;
     }
 
 
@@ -85,6 +87,7 @@
     .theBigButton {
         width: 80%;
         line-height: 300%;
+        margin-top: 1%;
     }
 
     .button {
