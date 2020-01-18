@@ -9,6 +9,7 @@
 
     display: flex;
     justify-content: space-evenly;
+    align-content: baseline;
     background-color: #F9EAE1;
     width: 100%;
     margin: 0;
@@ -21,11 +22,11 @@
     background-color: white;
     justify-content: center;
     flex-direction: column;
-    padding: 20%px;
+    padding: 2%;
     min-height: 100%;
 }
 
-/*Desktop */
+
 .nav {
     background-color: #F9EAE1;
     margin: 0;
@@ -64,11 +65,6 @@ body {
     /*font-family: 'Raleway', sans-serif;*/
 }
 
-h1 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 50px;
-}
-
 header {
     background-color: #f9eae1;
 }
@@ -86,7 +82,7 @@ a {
     border: none;
     color: black;
     font-size: 150%;
-    line-height: 60px;
+    line-height: 250%;
 }
 
 button:hover {

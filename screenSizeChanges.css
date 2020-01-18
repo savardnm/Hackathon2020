@@ -4,7 +4,8 @@
     .flex-container-footer {
         flex-direction: row;
         align-content: flex-end;
-        padding-top: 6.6%;
+        flex-grow: 1;
+        margin-bottom: fill;
     }
 
     .nav {
