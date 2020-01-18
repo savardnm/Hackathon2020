@@ -1,6 +1,7 @@
 body {
     color:darkred;
     text-align:center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 text:hover {
@@ -8,6 +9,7 @@ text:hover {
 }
 
 button {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     margin-top: 20px;
     line-height: 60px;
     font-weight: bold;
