@@ -19,7 +19,7 @@
 
 
 <a href="https://media.tenor.com/images/5bd5282f3ceae2a96a880c3f7c70e8fb/tenor.gif">
-    <div class="banner"></div>
+    <div class="banner" style="top:0"></div>
 </a>
 
 <div class="greyed" id="grey" onclick="closeImage()"></div>
@@ -35,56 +35,56 @@
 <h1>
     Available Rooms:
 </h1>
-<body style="width:100%; align-content: center; max-height: 100%">
-<section class="flex-container-table">
-    <div>
-        <button class="button" onclick="lButtonClicked()" id="lButton" disabled><</button>
-    </div>
-    <div style="width:100%;">
+<div style="width:100%; align-content: center; height:80%">
+    <section class="flex-container-table" style="height:100%">
+        <div>
+            <button class="button" onclick="lButtonClicked()" id="lButton" disabled><</button>
+        </div>
+        <div style="width:100%; height:80vh">
 
-        <table>
+            <table>
 
-            <tr>
-                <th>Room</th>
-                <th>Available For</th>
-            </tr>
-            <tr id="R1" onclick="openImage(1)">
-                <td id="roomR1"></td>
-                <td id="hoursR1"></td>
-            </tr>
-            <tr id="R2" onclick="openImage(2)">
-                <td id="roomR2"></td>
-                <td id="hoursR2"></td>
-            </tr>
-            <tr id="R3" onclick="openImage(3)">
-                <td id="roomR3"></td>
-                <td id="hoursR3"></td>
-            </tr>
-            <tr id="R4" onclick="openImage(4)">
-                <td id="roomR4"></td>
-                <td id="hoursR4"></td>
-            </tr>
-            <tr id="R5" onclick="openImage(5)">
-                <td id="roomR5"></td>
-                <td id="hoursR5"></td>
+                <tr>
+                    <th>Room</th>
+                    <th>Available For</th>
+                </tr>
+                <tr id="R1" onclick="openImage(1)">
+                    <td id="roomR1"></td>
+                    <td id="hoursR1"></td>
+                </tr>
+                <tr id="R2" onclick="openImage(2)">
+                    <td id="roomR2"></td>
+                    <td id="hoursR2"></td>
+                </tr>
+                <tr id="R3" onclick="openImage(3)">
+                    <td id="roomR3"></td>
+                    <td id="hoursR3"></td>
+                </tr>
+                <tr id="R4" onclick="openImage(4)">
+                    <td id="roomR4"></td>
+                    <td id="hoursR4"></td>
+                </tr>
+                <tr id="R5" onclick="openImage(5)">
+                    <td id="roomR5"></td>
+                    <td id="hoursR5"></td>
 
-            </tr>
-            </a>
-        </table>
-    </div>
+                </tr>
+                </a>
+            </table>
+        </div>
 
-    <div>
-        <button class="button" onclick="rButtonClicked()" id="rButton" disabled> ></button>
-    </div>
-</section>
+        <div>
+            <button class="button" onclick="rButtonClicked()" id="rButton" disabled> ></button>
+        </div>
+    </section>
 
-<section class="flex-container-footer">
-    <div class="nav"><a href="index.html">Home</a></div>
-    <div class="nav"><a href="http://wpi.libcal.com/spaces?lid=914&gid=2331"> Reserve Library Tech Suite </a></div>
-    <div class="nav"><a href="https://wpi.libcal.com/reserve/fistechsuite"> Reserve a "Foisie" Tech Suite </a></div>
-    <div class="nav"><a href="https://25live.collegenet.com/pro/wpi"> 25 Live </a></div>
-</section>
-</body>
+    <section class="flex-container-footer">
+        <div class="nav"><a href="index.html">Home</a></div>
+        <div class="nav"><a href="http://wpi.libcal.com/spaces?lid=914&gid=2331"> Reserve Library Tech Suite </a></div>
+        <div class="nav"><a href="https://wpi.libcal.com/reserve/fistechsuite"> Reserve a "Foisie" Tech Suite </a></div>
+        <div class="nav"><a href="https://25live.collegenet.com/pro/wpi"> 25 Live </a></div>
+    </section>
+</div>
 
 
 </html>
