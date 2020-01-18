@@ -1,4 +1,4 @@
-function getAvailabity(id, startTime, endTime, currentHour) {
+function getAvailability(id, startTime, endTime, currentHour) {
 	var xhr = new XMLHttpRequest();
 	var url = live_base_url + id + live_start_time_url + startTime + live_end_time_url + endTime + live_modifiers_url; 
 	
@@ -26,7 +26,7 @@ function processResponse(xml, currentHour) {
 
 function getRoomAvailHours() {
 	var hoursOpen = {}
-	var today = Date()
+	var today = new Date()
 	var hour = today.getHours();
 	if (hour < 10) {
 		hour = "0" + toString(hour);
@@ -40,3 +40,5 @@ function getRoomAvailHours() {
 	});
 	return hoursOpen;
 }
+
+var availHours = getRoomAvailHours();

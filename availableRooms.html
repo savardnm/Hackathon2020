@@ -2,7 +2,8 @@
 <html>
 <link rel="stylesheet" href="FirstPageStyle.css">
 <HEAD>
-<script src="ids.js"></script>
+    <script src="ids.js"></script>
+    <script src="get_availabilities.js"></script>
 </HEAD>
 <h1>
     <div style="text-align: center;">Available Rooms:</div>
@@ -50,8 +51,9 @@
             <th>Layout</th>
         </tr>
         <tr>
-            <td><script src="ids.js">rooms[5]</script></td>
-            <td><script src="ids.js">getRoomAvailHours()[5]</script></td>
+            <td><script>document.write(rooms[5]);
+            console.log(rooms['5']);</script></td>
+            <td><script>document.write(availHours['5']);</script></td>
             <td></td>
         </tr>
         <tr>
