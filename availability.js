@@ -19,13 +19,17 @@ function lButtonClicked() {
 }
 
 function clickStudyNow() {
-	runningDate = new Date();
+	var today = new Date();
+	today.setMinutes(0);
+	today.setSeconds(0);
+	today.setMilliseconds(0);
+	window.sessionStorage.setItem("runningDate", JSON.stringify(today));
 	window.location.href = "availableRooms.html";
 }
 
 function clickStudyLater() {
 	var date = document.getElementById("daySelect").value;
 	var hour = document.getElementById("hourSelect").value;
-	runningDate = new Date(date.getFullYear(), date.getMonth(), date.getDate(), hour, 0, 0);
+	window.sessionStorage.setItem("runningDate", JSON.stringify(new Date(date.getFullYear(), date.getMonth(), date.getDate(), hour, 0, 0)));
 	window.location.href = "availableRooms.html";
 }

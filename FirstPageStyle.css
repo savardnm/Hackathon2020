@@ -1,74 +1,15 @@
-/*desktop*/
-@media screen and (min-width: 500px) {
-
-    .flex-container-footer {
-        flex-direction: row;
-        left: 0;
-        position: fixed;
-        bottom: 0;
-        align-content: baseline;
-    }
-
-    .nav {
-        font-size: 18px;
-        width: 25%;
-    }
-
-    .blockText {
-
-        padding-right: 35%;
-        padding-left: 35%;
-    }
-
+.allContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    height: 100%;
 }
-
-/*mobile*/
-@media screen and (max-width: 500px) {
-
-
-    .flex-container-middle {
-        padding: 50px;
-        flex-wrap: wrap;
-        position: static;
-
-    }
-
-    .flex-container-footer {
-
-        flex-direction: column;
-        align-content: center;
-        position: static;
-
-    }
-
-    .nav {
-        font-size: 100%;
-        width: 100%;
-        right: 0;
-        left: 0;
-    }
-
-    body {
-        position: fixed;
-    }
-
-    .blockText {
-
-        padding-left: 15%;
-        padding-right: 15%;
-    }
-
-    .allContainer {
-         overflow: scroll;
-     }
-}
-
-
 
 .flex-container-footer {
 
     display: flex;
     justify-content: space-evenly;
+    align-content: baseline;
     background-color: #F9EAE1;
     width: 100%;
     margin: 0;
@@ -81,24 +22,12 @@
     background-color: white;
     justify-content: center;
     flex-direction: column;
-    padding: 20%px;
+    padding: 2%;
     min-height: 100%;
 }
 
-/*Desktop */
-.nav {
-    background-color: #F9EAE1;
-    margin: 0;
-    line-height: 250%;
-}
 
-.nav:hover {
-    background-color: #D7C9AA;
-}
 
-.nav a {
-    display: block;
-}
 
 .header {
     padding: 3%;
@@ -122,12 +51,6 @@ body {
     text-align: center;
     margin: 0;
     /*font-family: 'Raleway', sans-serif;*/
-    background-color: purple;
-}
-
-h1 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 50px;
 }
 
 header {
@@ -147,7 +70,7 @@ a {
     border: none;
     color: black;
     font-size: 150%;
-    line-height: 60px;
+    line-height: 250%;
 }
 
 button:hover {

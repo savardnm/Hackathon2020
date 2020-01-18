@@ -1,16 +1,17 @@
 var TABLE_ROWS = 5;
 var CURRENT_PAGE = 0;
 
-var runningDate;
-var roomsOpen;
+var roomsOpen = {};
 function runGetRooms() {
-	var roomsOpen = getAllRoomsOpenLength(runningDate, new Date(runningDate.getTime() + 24 * 60 * 60 * 1000));
+	roomsOpen = getAllRoomsOpenLength(new Date(JSON.parse(window.sessionStorage.getItem("runningDate"))), new Date(new Date(JSON.parse(window.sessionStorage.getItem("runningDate"))).getTime() + 24 * 60 * 60 * 1000));
 }
 
 function checkAllResponsesIn(responseCount) {
 	if (responseCount == Object.keys(rooms).length) {
 		var loadSymbol = document.getElementById("loadingSymbol");
-		loadSymbol.parentNode.removeChild(loadSymbol);
+		var grey = document.getElementById("grey");
+		loadSymbol.parentNode.removeChild(loadSymbol);;
+		grey.parentNode.removeChild(grey);
 		roomsOpen = fillTable();
 		updateListing();
 	}
@@ -41,6 +42,8 @@ function updateListing() {
 	for (var key in page) {
 		document.getElementById("roomR" + count).innerHTML = rooms[key];
 		document.getElementById("hoursR" + count).innerHTML = page[key] + " hours";
+		document.getElementById("imgR" + count).src = roomPics[key];
+		document.getElementById("linkR" + count).href = "https://25live.collegenet.com/pro/wpi#!/home/location/" + key + "/details";
 		count++;
 	}
 	if (roomsOpen.length > 1) {
