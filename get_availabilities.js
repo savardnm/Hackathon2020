@@ -29,9 +29,9 @@ function getRoomAvailHours() {
 	var today = new Date()
 	var hour = today.getHours();
 	if (hour < 10) {
-		hour = "0" + toString(hour);
+		hour = "0" + hour.toString();
 	} else {
-		hour = toString(hour);
+		hour = hour.toString();
 	}	
 	var startTime = toString(today.getFullYear()) + "-" + toString(today.getMonth()) + "-" + toString(today.getDate()) + "T" + hour + ":00:00";
 	var endTime = toString(today.getFullYear()) + "-" + toString(today.getMonth() + 1) + "-" + toString(today.getDate()) + "T" + hour + ":00:00";
