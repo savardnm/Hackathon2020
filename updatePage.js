@@ -43,7 +43,7 @@ function updateListing() {
 		document.getElementById("roomR" + count).innerHTML = rooms[key];
 		document.getElementById("hoursR" + count).innerHTML = page[key] + " hours";
 		document.getElementById("imgR" + count).src = roomPics[key];
-		document.getElementById("linkR" + count).href = "https://25live.collegenet.com/pro/wpi#!/home/location/" + key + "/details";
+		//document.getElementById("linkR" + count).href = "https://25live.collegenet.com/pro/wpi#!/home/location/" + key + "/details";
 		count++;
 	}
 	if (roomsOpen.length > 1) {
