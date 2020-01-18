@@ -2,10 +2,10 @@
 
 <script src="ids.js"></script>
 <script src="get_availabilities.js"></script>
-<meta name=”viewport” content=”width=device-width, initial-scale=1″>
+
 <html lang="en">
 <link rel="stylesheet" href="FirstPageStyle.css">
-
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 
 
 <head>
@@ -13,15 +13,22 @@
     <title>StudySpace</title>
 </head>
 <body>
-    <h1> Find an Empty Classroom </h1>
 
-    <p> See all currently available classrooms on campus! </p>
+        <header>
+            <h1> StudySpace Finder </h1>
+        </header>
+
+    <section style="background-color: white; height: 600%">
 
     <p id="demo"></p>
 
-    <button onclick="myFunction()">LET'S STUDY</button>
+    <p> See all currently available classrooms on campus! </p>
 
-    <script>
+        <a href="availableRooms.html"><button style="font=italic">LET'S STUDY</button></a>
+
+   <!--
+    <button onclick="myFunction()>LET'S STUDY</button>
+            <script>
         function myFunction() {
 
             document.getElementById("demo").innerHTML = "Hello World";
@@ -29,7 +36,21 @@
         }
 
     </script>
+    -->
+    </section>
+
+        <section class="flex-container">
+    <footer>
+       <!-- <div style="flex-basis: 20%"> <a href="aboutUs.html">About Us</a> </div>
+        <div style="flex-basis: 20%"> <a href="https://25live.collegenet.com/pro/wpi">25 Live</a></div>
+        <div style="flex-basis: 20%"> <a href="http://wpi.libcal.com/spaces?lid=914&gid=2331">Reserve Library Tech Suite</a></div>
+        <div style="flex-basis: 20%"> <a href="https://wpi.libcal.com/reserve/fistechsuite">Reserve a "Foisie"" Tech Suite</a></div>
+    </footer>
+
+        </section>
+
 
 </body>
+
 </html>
 
