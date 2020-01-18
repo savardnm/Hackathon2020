@@ -29,7 +29,6 @@ function getAllRoomsOpenLength(startDate, endDate) {
 				checkAllResponsesIn(++responses);
 			});
 	});
-	//document.getElementById("loadingSymbol").style.visibility = "hidden";
 	return roomHours;
 }
 

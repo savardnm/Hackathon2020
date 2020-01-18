@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-
-<script src="ids.js"></script>
-<script src="get_availabilities.js"></script>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>StudySpace</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="ids.js"></script>
+	<script src="availability.js"></script>
+	<script src="call25.js"></script>
+	<script src="updatePage.js"></script>
     <link rel="stylesheet" href="FirstPageStyle.css">
     <link rel="stylesheet" href="AllStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -25,15 +25,48 @@
 <body>
 
 <section class="flex-container-middle">
-
-    <a href="availableRooms.html">
-        <p>
-            <button class="theBigButton">STUDY NOW</button>
-        </p>
-        <p>
-            <button class="theBigButton">STUDY LATER</button>
-        </p>
-    </a>
+    <p>
+        <button class="theBigButton" id="studyNow" onclick="clickStudyNow()">STUDY NOW</button>
+    </p>
+	
+    <p>
+        <button class="theBigButton" id="studyLater" onclick="clickStudyLater()" disabled>STUDY LATER</button>
+    </p>
+	
+	<p>
+		<form oninput="document.getElementById('studyLater').disabled = false;">
+			<input type="date" name="daySelect" id="daySelect">
+		</form>
+		
+		<select id="hourSelect">
+			<option value="00:00">12:00 AM</option>
+			<option value="01:00">1:00 AM</option>
+			<option value="02:00">2:00 AM</option>
+			<option value="03:00">3:00 AM</option>
+			<option value="04:00">4:00 AM</option>
+			<option value="05:00">5:00 AM</option>
+			<option value="06:00">6:00 AM</option>
+			<option value="07:00">7:00 AM</option>
+			<option value="08:00">8:00 AM</option>
+			<option value="09:00">9:00 AM</option>
+			<option value="10:00">10:00 AM</option>
+			<option value="11:00">11:00 AM</option>
+			<option value="12:00">12:00 PM</option>
+			<option value="13:00">1:00 PM</option>
+			<option value="14:00">2:00 PM</option>
+			<option value="15:00">3:00 PM</option>
+			<option value="16:00">4:00 PM</option>
+			<option value="17:00">5:00 PM</option>
+			<option value="18:00">6:00 PM</option>
+			<option value="19:00">7:00 PM</option>
+			<option value="20:00">8:00 PM</option>
+			<option value="21:00">9:00 PM</option>
+			<option value="22:00">10:00 PM</option>
+			<option value="23:00">11:00 PM</option>
+		</select>
+	</p>
+	
+	
 
     <p> Good luck studying! </p>
 

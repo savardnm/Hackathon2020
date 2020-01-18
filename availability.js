@@ -17,3 +17,15 @@ function lButtonClicked() {
 		document.getElementById('rButton').disabled = false;
 	}
 }
+
+function clickStudyNow() {
+	runningDate = new Date();
+	window.location.href = "availableRooms.html";
+}
+
+function clickStudyLater() {
+	var date = document.getElementById("daySelect").value;
+	var hour = document.getElementById("hourSelect").value;
+	runningDate = new Date(date.getFullYear(), date.getMonth(), date.getDate(), hour, 0, 0);
+	window.location.href = "availableRooms.html";
+}

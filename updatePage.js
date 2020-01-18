@@ -1,7 +1,11 @@
 var TABLE_ROWS = 5;
 var CURRENT_PAGE = 0;
 
-var roomsOpen = getAllRoomsOpenLength(new Date(), new Date(new Date().getTime() + 24 * 60 * 60 * 1000));
+var runningDate;
+var roomsOpen;
+function runGetRooms() {
+	var roomsOpen = getAllRoomsOpenLength(runningDate, new Date(runningDate.getTime() + 24 * 60 * 60 * 1000));
+}
 
 function checkAllResponsesIn(responseCount) {
 	if (responseCount == Object.keys(rooms).length) {

@@ -154,6 +154,10 @@ button:hover {
     background: #DC9B96;
 }
 
+button:disabled {
+	background: #666666
+}
+
 .banner {
     background: #A20021;
     height: 50px;
