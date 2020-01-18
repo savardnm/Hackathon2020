@@ -11,18 +11,9 @@
     justify-content: center;
     flex-direction: column;
     padding: 2%;
-    height: 53vh;
+    height: 55vh;
 }
 
-
-.header {
-    height: 40%;
-    text-align: center;
-    background: #A20021;
-    color: #F9EAE1;
-    font-size: 20px;
-    margin: 0;
-}
 
 .blockText {
     padding-top: 15px;

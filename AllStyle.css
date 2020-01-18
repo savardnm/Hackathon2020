@@ -21,6 +21,13 @@ text {
     flex-grow: 1;
 }
 
+.header {
+    background-color:#A20021;
+    color:white;
+    margin:0;
+    height:18vh;
+}
+
 .nav:hover {
     background-color: #D7C9AA;
 }
@@ -30,14 +37,22 @@ text {
 }
 
 .banner{
-    position:absolute;
     width:100%;
     background-color:#A20021;
     height:5vh;
-    z-index:200;
+
 }
 
-
+/*.header {
+    height: 40%;
+    text-align: center;
+    background-color: #A20021;
+    color: #F9EAE1;
+    font-size: 20px;
+    margin: 0;
+    z-index:99;
+    top:5vh;
+}*/
 
 
 .flex-container-footer {
