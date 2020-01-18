@@ -50,14 +50,22 @@ function updateListing() {
         //document.getElementById("linkR" + count).href = "https://25live.collegenet.com/pro/wpi#!/home/location/" + key + "/details";
         count++;
     }
+	while (count < 6) {
+		document.getElementById("roomR" + count).innerHTML = "";
+		document.getElementById("hoursR" + count).innerHTML = "";
+		document.getElementById("imgR" + count).src = "";
+		count++;
+	}
     if (roomsOpen.length > 1) {
         document.getElementById('rButton').disabled = false;
     }
 }
 
 function openImage(pos) {
-    document.getElementById("imgR" + pos).style.visibility = "visible";
-    document.getElementById("grey").style.visibility = "visible";
+	if (document.getElementById("roomR" + pos).innerHTML != "") {
+		document.getElementById("imgR" + pos).style.visibility = "visible";
+		document.getElementById("grey").style.visibility = "visible";
+	}
 }
 
 function closeImage() {
