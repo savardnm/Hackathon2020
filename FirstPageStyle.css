@@ -1,8 +1,7 @@
 .allContainer {
     display: flex;
     flex-direction: column;
-    align-content: space-evenly;
-    height: 100%;
+    max-height: 100%;
 }
 
 
@@ -14,11 +13,12 @@
     flex-direction: column;
     padding: 2%;
     min-height: 100%;
+
 }
 
 
 .header {
-    padding: 3%;
+    padding: 1%;
     text-align: center;
     background: #A20021;
     color: #F9EAE1;

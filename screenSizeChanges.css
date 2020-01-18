@@ -26,6 +26,10 @@
 
     }
 
+    .button {
+        font-size: 550%;
+    }
+
 
     .theBigButton {
         width: 20%;
@@ -81,6 +85,10 @@
     .theBigButton {
         width: 80%;
         line-height: 300%;
+    }
+
+    .button {
+        font-size: 200%;
     }
 
 }

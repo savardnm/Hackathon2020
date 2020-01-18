@@ -31,9 +31,7 @@ button {
     display: block;
     height: 100%;
     width: 50%;
-    font-size: 100px;
     justify-content: space-evenly;
-
     position: relative;
     box-sizing: border-box;
 
@@ -59,6 +57,7 @@ table {
 }
 
 td, th {
+    text-align: center;
     height: 15%;
     min-width: 1000%;
 }
