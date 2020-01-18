@@ -1,6 +1,8 @@
-h1{
+h1 {
     font-size: xx-large;
+    text-align: center
 }
+
 .flex-container-table {
 
     display: flex;
@@ -8,40 +10,41 @@ h1{
     bottom: 0;
     background: #442222;
 }
-button{
+
+button {
     margin: 5px;
     color: #442222;
     background: #CC8B86;
-    margin: 0px;
     min-width: 100px;
     min-height: 50px;
-    margin: 5px;
 
-    border: 0px;
+    border: 0;
     min-font-size: 30px;
 
 }
 
 .button {
-    margin:0px;
+    margin: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
     font-size: 100px;
     justify-content: space-evenly;
-    padding: 100px 50px;
+
     position: relative;
-    height: 540px;
+    box-sizing: border-box;
 
 }
 
-.button:hover {
+button:hover {
     background: #DC9B96;
 }
 
 table {
     border-collapse: collapse;
-    border-spacing: 0px;
+    border-spacing: 0;
     font-size: x-large;
     border-radius: 30px;
-    border-radius: 25px;
     padding: 20px;
 }
 
@@ -51,16 +54,16 @@ td, th {
 }
 
 th {
-    border: 0px solid #422;
+    border: 0 solid #422;
     background: #A20021;
     font-weight: bold;
     color: #EEEEEE;
 }
 
 td {
-    border: 0px solid #A88;
+    border: 0 solid #A88;
     background: #FFFFFF;
-    height: 100px;
+    height: 90px;
 }
 
 tr:nth-child(odd) td {

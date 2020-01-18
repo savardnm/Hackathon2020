@@ -1,8 +1,8 @@
-function rButtonClicked(){
+function rButtonClicked() {
     document.getElementById("rButton").style.background = "darkred";
 }
 
-function lButtonClicked(){
+function lButtonClicked() {
     document.getElementById("lButton").style.background = "darkred";
 
 }
