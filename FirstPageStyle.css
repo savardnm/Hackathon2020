@@ -12,6 +12,12 @@
         font-size: 18px;
     }
 
+    .blockText {
+
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
 }
 /*mobile*/
 @media screen and (max-width:500px) {
@@ -45,6 +51,11 @@
         position: fixed;
     }
 
+    .blockText {
+
+        margin-left: 15%;
+        margin-right: 15%;
+    }
 }
 
 .flex-container-footer {
@@ -87,7 +98,10 @@
     font-size: 20px;
 }
 
-
+.blockText {
+    horiz-align: center;
+    text-align: justify;
+}
 body {
     color: black;
     text-align:center;
