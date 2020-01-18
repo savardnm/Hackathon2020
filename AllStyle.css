@@ -16,9 +16,9 @@ text {
 .nav {
     background-color: #F9EAE1;
     margin: 0;
-    line-height: 250%;
     text-align: center;
     flex-grow: 1;
+    height:100%
 }
 
 .nav:hover {
@@ -64,5 +64,5 @@ button:hover {
 }
 
 button:disabled {
-    background: #666666;
+    background: #888888;
 }

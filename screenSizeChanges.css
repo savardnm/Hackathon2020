@@ -6,7 +6,6 @@
         align-content: flex-end;
         flex-grow: 1;
         margin-bottom: fill;
-        border-top: 1px solid #DAB8B8;
         position: absolute;
         bottom: 0;
     }
