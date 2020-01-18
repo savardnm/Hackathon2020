@@ -9,6 +9,9 @@ h1 {
     justify-content: center;
     bottom: 0;
     background: #442222;
+    width: 100%;
+    align-content: center;
+
 }
 
 button {
@@ -27,7 +30,7 @@ button {
     margin: 0;
     display: block;
     height: 100%;
-    width: 100%;
+    width: 50%;
     font-size: 100px;
     justify-content: space-evenly;
 
@@ -45,16 +48,19 @@ button:disabled {
 }
 
 table {
+    flex-grow: 1;
     border-collapse: collapse;
     border-spacing: 0;
-    font-size: x-large;
-    border-radius: 30px;
-    padding: 20px;
+    font-size: medium;
+    border-radius: 10%;
+    padding: 3%;
+    font-family: 'Gloria Hallelujah', cursive;
+    width: 100%
 }
 
 td, th {
-    height: 30px;
-    min-width: 200px
+    height: 15%;
+    min-width: 1000%;
 }
 
 th {
