@@ -4,11 +4,11 @@
     <title>Take That Laurie!</title>
     <script src="ids.js"></script>
     <script src="availability.js"></script>
-	<script src="call25.js"></script>
-	<script src="updatePage.js"></script>
-	<script type="text/javascript">
-		window.onload = runGetRooms;
-	</script>
+    <script src="call25.js"></script>
+    <script src="updatePage.js"></script>
+    <script type="text/javascript">
+        window.onload = runGetRooms;
+    </script>
     <link rel="stylesheet" href="availableRoomsStyle.css">
     <link rel="stylesheet" href="AllStyle.css">
     <link rel="stylesheet" href="screenSizeChanges.css">
@@ -21,12 +21,20 @@
 <a href="https://media.tenor.com/images/5bd5282f3ceae2a96a880c3f7c70e8fb/tenor.gif">
     <div class="banner"></div>
 </a>
+
+<div class="greyed" id="grey" onclick="closeImage()"></div>
+<div class="loader" id="loadingSymbol"></div>
+
+<div class="hiddenImage"><img id="imgR1"></div>
+<div class="hiddenImage"><img id="imgR2"></div>
+<div class="hiddenImage"><img id="imgR3"></div>
+<div class="hiddenImage"><img id="imgR4"></div>
+<div class="hiddenImage"><img id="imgR5"></div>
+
+
 <h1>
     Available Rooms:
 </h1>
-<div class="greyed" id="grey"></div>
-<div class="loader" id="loadingSymbol"></div>
-
 <body style="width:100%; align-content: center">
 <section class="flex-container-table">
     <div>
@@ -39,33 +47,26 @@
             <tr>
                 <th>Room</th>
                 <th>Available For</th>
-                <th>Layout</th>
             </tr>
-            <tr>
-                    <td id="roomR1"></td>
-                    <td id="hoursR1"></td>
-                    <td><img id="imgR1"></td>
+            <tr id="R1" onclick="openImage(1)">
+                <td id="roomR1"></td>
+                <td id="hoursR1"></td>
             </tr>
-            <tr>
-                    <td id="roomR2"></td>
-                    <td id="hoursR2"></td>
-                    <td><img id="imgR2"></td>
+            <tr id="R2" onclick="openImage(2)">
+                <td id="roomR2"></td>
+                <td id="hoursR2"></td>
             </tr>
-            <tr>
-                    <td id="roomR3"></td>
-                    <td id="hoursR3"></td>
-                    <td><img id="imgR3"></td>
+            <tr id="R3" onclick="openImage(3)">
+                <td id="roomR3"></td>
+                <td id="hoursR3"></td>
             </tr>
-            <tr>
-                    <td id="roomR4"></td>
-                    <td id="hoursR4"></td>
-                    <td><img id="imgR4"></td>
+            <tr id="R4" onclick="openImage(4)">
+                <td id="roomR4"></td>
+                <td id="hoursR4"></td>
             </tr>
-
-            <tr>
+            <tr id="R5" onclick="openImage(5)">
                 <td id="roomR5"></td>
                 <td id="hoursR5"></td>
-                <td><img id="imgR5"></td>
 
             </tr>
             </a>
