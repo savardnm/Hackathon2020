@@ -109,3 +109,7 @@ td:hover {
   100% { transform: rotate(360deg); }
 }
 
+img{
+    max-width:90%;
+    max-height: 90%;
+}
