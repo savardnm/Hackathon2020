@@ -113,12 +113,16 @@ td:hover {
 
 .hiddenImage {
     position: fixed;
-    vertical-align: center;
-    horiz-align: center;
+    vertical-align: middle;
     visibility: hidden;
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 60%;
+    max-width: 60%;
+    padding-left:50%;
     z-index:150;
+}
+img{
+    margin-left:-50%;
+    vertical-align: middle;
 }
 
 @keyframes spin {
