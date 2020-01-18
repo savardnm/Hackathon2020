@@ -4,6 +4,7 @@
     .flex-container-footer {
         flex-direction: row;
         align-content: flex-end;
+        padding-top: 6.6%;
     }
 
     .nav {
@@ -17,6 +18,9 @@
         padding-left: 35%;
     }
 
+    .flex-container-middle {
+    }
+
 }
 
 /*mobile*/
@@ -24,7 +28,7 @@
 
 
     .flex-container-middle {
-        padding: 50px;
+        padding: 10%;
         flex-wrap: wrap;
         position: static;
 
