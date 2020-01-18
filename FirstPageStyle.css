@@ -3,10 +3,14 @@
     flex-direction: row;
     justify-content: center;
     justify-content: space-evenly;
+    align-content: stretch;
     background-color:#F9EAE1;
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .flex-container-middle {
@@ -14,14 +18,21 @@
     justify-content: center;
     padding: 60px;
 }
-
+/*Desktop */
 .nav {
     background-color: #F9EAE1;
+    margins: 0px;
     width: 25%;
+    font-size: 18px;
+    line-height: 250%;
 }
 
 .nav:hover {
     background-color: #D7C9AA;
+}
+
+.nav a{
+    display: block;
 }
 
 .header {
@@ -38,8 +49,6 @@ body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
     background-color: #F9EAE1;
-
-
 }
 
 h1 {
@@ -55,7 +64,7 @@ a {
     color: black;
     text-decoration: none;
 }
-button {
+.theBigButton {
     margin-top: 2%;
     font-weight: bold;
     padding: 0 5%;
