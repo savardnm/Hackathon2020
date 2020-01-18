@@ -1,12 +1,8 @@
 body {
-    color: #A20021 ;
+    color: black;
     text-align:center;
     background-color: #f9eae1;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-}
-
-text:hover {
-    color:hotpink;
 }
 
 button {
@@ -17,8 +13,5 @@ button {
     padding: 0 40px;
     background: #CC8B86;
     border: none;
-}
-
-button:hover {
-    background: lightsalmon;
+    color: black;
 }
