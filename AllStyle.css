@@ -29,6 +29,17 @@ text {
     display: block;
 }
 
+.banner{
+    position:absolute;
+    width:100%;
+    background-color:#A20021;
+    height:5vh;
+    z-index:200;
+}
+
+
+
+
 .flex-container-footer {
 
     display: flex;
