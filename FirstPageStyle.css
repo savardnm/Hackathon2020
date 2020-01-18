@@ -140,7 +140,7 @@ a {
 .theBigButton {
     margin-top: 2%;
     font-weight: bold;
-    padding: 0 5%;
+    width: 20%;
     background: #CC8B86;
     border: none;
     color: black;
