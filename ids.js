@@ -1,10 +1,10 @@
-var live_base_url = "https://25live.collegenet.com/25live/data/wpi/run/rm_reservations.xml?space_id="
+var live_base_url = "https://cors-anywhere.herokuapp.com/https://25live.collegenet.com/25live/data/wpi/run/rm_reservations.xml?space_id="
 
 var live_start_time_url = "&start_dt="
 
 var live_end_time_url = "&end_dt="
 
-var live_modifiers_url = "&include=closed+blackouts+pending+related+empty&caller=pro-ReservationDao.getReservations"
+var live_modifiers_url = "&include=blackouts+pending+related+empty&caller=pro-ReservationDao.getReservations"
 
 var rooms = {
 	5:"AK 116",
@@ -20,11 +20,8 @@ var rooms = {
 	216:"GH 007",
 	171:"GH 109",
 	172:"GH 110",
-	207:"GH 206",
-	311:"GH 207",
 	14:"GH 227",
 	218:"GH 306",
-	217:"GH 307",
 	77:"Harrington Auditorium",
 	17:"HL 114",
 	18:"HL 116",
