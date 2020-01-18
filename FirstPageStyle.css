@@ -1,3 +1,4 @@
+/*desktop*/
 @media screen and (min-width:500px) {
 
     .flex-container-footer {
@@ -12,17 +13,38 @@
     }
 
 }
+/*mobile*/
 @media screen and (max-width:500px) {
+
+
+    .flex-container-middle {
+        display: block;
+        border: blue;
+        border-width: 10px;
+        flex-wrap: wrap;
+        overflow: auto;
+        min-height: 400px;
+        display: contents;
+    }
 
     .flex-container-footer {
 
         flex-direction: column;
-        position: relative;
         align-content: center;
+        overflow: scroll;
+        positon: absolute;
+        bottom: -50px;
     }
+
     .nav {
         font-size: 100%;
+        right: 0;
+        left: 0;
     }
+    body {
+        position: fixed;
+    }
+
 }
 
 .flex-container-footer {
@@ -68,9 +90,6 @@
     font-size: 20px;
 }
 
-.rightTableButt {
-
-}
 
 body {
     color: black;
