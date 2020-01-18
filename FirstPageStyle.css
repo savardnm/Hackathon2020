@@ -36,7 +36,8 @@
 
         flex-direction: column;
         align-content: center;
-        overflow: scroll;
+        position: static;
+        bottom: -10000%;
 
     }
 
@@ -74,8 +75,10 @@
 }
 
 .flex-container-middle {
+    display: flex;
     background-color: white;
     justify-content: center;
+    flex-direction: column;
     padding: 60px;
     height: 30%;
 }
