@@ -1,10 +1,85 @@
+/*desktop*/
+@media screen and (min-width:500px) {
+
+    .flex-container-footer {
+        flex-direction: row;
+        left: 0;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .nav {
+        font-size: 18px;
+    }
+
+}
+/*mobile*/
+@media screen and (max-width:500px) {
+
+
+    .flex-container-middle {
+        display: block;
+        border: blue;
+        border-width: 10px;
+        flex-wrap: wrap;
+        overflow: auto;
+        min-height: 400px;
+        display: contents;
+    }
+
+    .flex-container-footer {
+
+        flex-direction: column;
+        align-content: center;
+        overflow: scroll;
+        positon: absolute;
+        bottom: -50px;
+    }
+
+    .nav {
+        font-size: 100%;
+        right: 0;
+        left: 0;
+    }
+    body {
+        position: fixed;
+    }
+
+}
+
 .flex-container-footer {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     justify-content: space-evenly;
-    vertical-align: bottom;
+    align-content: stretch;
     background-color:#F9EAE1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.flex-container-table {
+    display: flex;
+}
+
+.flex-container-middle {
+    background-color: white;
+    justify-content: center;
+    padding: 60px;
+}
+/*Desktop */
+.nav {
+    background-color: #F9EAE1;
+    margins: 0px;
+    width: 25%;
+    line-height: 250%;
+}
+
+.nav:hover {
+    background-color: #D7C9AA;
+}
+
+.nav a{
+    display: block;
 }
 
 .header {
@@ -15,14 +90,13 @@
     font-size: 20px;
 }
 
+
 body {
     color: black;
     text-align:center;
     margin: 0;
-    background-color: #F9EAE1 ;
     font-family: 'Raleway', sans-serif;
-
-
+    background-color: #F9EAE1;
 }
 
 h1 {
@@ -38,7 +112,7 @@ a {
     color: black;
     text-decoration: none;
 }
-button {
+.theBigButton {
     margin-top: 2%;
     font-weight: bold;
     padding: 0 5%;
@@ -47,4 +121,5 @@ button {
     color: black;
     font-size: 150%;
     line-height: 60px;
+}
 }

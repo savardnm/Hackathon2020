@@ -2,14 +2,16 @@ var hoursOpen = {};
 
 function getAvailability(id, startTime, endTime, currentHour) {
 	var xhr = new XMLHttpRequest();
-	var url = live_base_url + id + live_start_time_url + startTime + live_end_time_url + endTime + live_modifiers_url; 
-
+	var url = live_base_url + id + live_start_time_url + startTime + live_end_time_url + endTime + live_modifiers_url;
 	xhr.open("GET", url, true);
 	xhr.send();
 	xhr.onloadend = function () {
 		if (xhr.readyState == XMLHttpRequest.DONE) {
 			processResponse(xhr.responseXML, currentHour, id);
 		}
+	};
+	xhr.onError = function () {
+		console.log("Request Failed");
 	};
 }
 
