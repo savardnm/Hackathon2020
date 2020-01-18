@@ -31,8 +31,8 @@ function getRoomAvailHours() {
 	var today = new Date()
 	var hour = fillZeroString(today.getHours());
 	var month = fillZeroString(today.getMonth() + 1);
-	var startDay = fillZeroString(today.getDay());
-	var endDay = fillZeroString(today.getDay() + 1);
+	var startDay = fillZeroString(today.getDate());
+	var endDay = fillZeroString(today.getDate() + 1);
 	
 	var startTime = today.getFullYear().toString() + "-" + month + "-" + startDay + "T" + hour + ":00:00";
 	var endTime = today.getFullYear().toString() + "-" + month + "-" + endDay + "T" + hour + ":00:00";
