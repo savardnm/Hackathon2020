@@ -57,6 +57,11 @@
         padding-right: 15%;
     }
 
+    .flex-container-table {
+        max-width: 500px;
+        max-font-size: 12px;
+    }
+
 
 
 
