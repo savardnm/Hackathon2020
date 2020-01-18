@@ -7,33 +7,33 @@ function runGetRooms() {
 }
 
 function checkAllResponsesIn(responseCount) {
-	if (responseCount == Object.keys(rooms).length) {
-		var loadSymbol = document.getElementById("loadingSymbol");
-		var grey = document.getElementById("grey");
-		loadSymbol.parentNode.removeChild(loadSymbol);;
-		grey.parentNode.removeChild(grey);
-		roomsOpen = fillTable();
-		updateListing();
-	}
+    if (responseCount == Object.keys(rooms).length) {
+        var loadSymbol = document.getElementById("loadingSymbol");
+        var grey = document.getElementById("grey");
+        loadSymbol.parentNode.removeChild(loadSymbol);
+        grey.parentNode.removeChild(grey);
+        roomsOpen = fillTable();
+        updateListing();
+    }
 }
 
 function fillTable() {
-	var table = []
-	
-	var count = 0;
-	for (var key in roomsOpen) {
-		if (roomsOpen[key] != 0) {
-			if (count % 5 == 0) {
-				var page = {};
-				page[key] = roomsOpen[key];
-				table.push(page);
-			} else {
-				table[Math.floor(count/TABLE_ROWS)][key] = roomsOpen[key];
-			}
-			count++;
-		}
-	}
-	return table;
+    var table = []
+
+    var count = 0;
+    for (var key in roomsOpen) {
+        if (roomsOpen[key] != 0) {
+            if (count % 5 == 0) {
+                var page = {};
+                page[key] = roomsOpen[key];
+                table.push(page);
+            } else {
+                table[Math.floor(count / TABLE_ROWS)][key] = roomsOpen[key];
+            }
+            count++;
+        }
+    }
+    return table;
 }
 
 function updateListing() {
@@ -49,4 +49,9 @@ function updateListing() {
 	if (roomsOpen.length > 1) {
 		document.getElementById('rButton').disabled = false;
 	}
+}
+
+function openImage(pos) {
+    document.getElementById("imgR" + pos).style.visibility = "visible";
+	document.getElementById("grey").style.opacity = "0.2";
 }
