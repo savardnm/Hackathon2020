@@ -91,6 +91,7 @@ td:hover {
 	height: 60px;
 	animation: spin 2s linear infinite;
 	margin-bottom: 30px;
+    position:fixed;
 }
 
 @keyframes spin {
