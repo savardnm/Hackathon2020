@@ -118,6 +118,7 @@ td:hover {
     visibility: hidden;
     max-height: 100%;
     max-width: 100%;
+    z-index:150;
 }
 
 @keyframes spin {
