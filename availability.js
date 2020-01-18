@@ -1,3 +1,8 @@
-var btn = document.createElement("BUTTON");   // Create a <button> element
-btn.innerHTML = "CLICK ME";                   // Insert text
-document.body.appendChild(btn);
+function rButtonClicked(){
+    document.getElementById("rButton").style.background = "darkred";
+}
+
+function lButtonClicked(){
+    document.getElementById("lButton").style.background = "darkred";
+
+}

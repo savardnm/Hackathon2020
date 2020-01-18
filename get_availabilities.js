@@ -46,6 +46,9 @@ function getRoomAvailHours() {
 	Object.keys(rooms).forEach(function(key) {
 		getAvailability(key, startTime, endTime, today.getHours());
 	});
+	while (Object.keys(hoursOpen).length < 39) {
+		
+	}
 }
 
 function fillZeroString(date) {
