@@ -58,7 +58,6 @@ table {
 
 td, th {
     text-align: center;
-    height: 15%;
     min-width: 1000%;
 }
 
@@ -66,13 +65,14 @@ th {
     border: 0 solid #422;
     background: #A20021;
     font-weight: bold;
+    height: 5vh;
     color: #EEEEEE;
 }
 
 td {
     border: 0 solid #A88;
     background: #FFFFFF;
-    height: 90px;
+    height: 14vh;
 }
 
 tr:nth-child(odd) td {
