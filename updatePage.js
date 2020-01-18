@@ -6,7 +6,9 @@ var roomsOpen = getAllRoomsOpenLength(new Date(), new Date(new Date().getTime() 
 function checkAllResponsesIn(responseCount) {
 	if (responseCount == Object.keys(rooms).length) {
 		var loadSymbol = document.getElementById("loadingSymbol");
-		loadSymbol.parentNode.removeChild(loadSymbol);
+		var grey = document.getElementById("grey");
+		loadSymbol.parentNode.removeChild(loadSymbol);;
+		grey.parentNode.removeChild(grey);
 		roomsOpen = fillTable();
 		updateListing();
 	}
