@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <title>StudySpace</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="ids.js"></script>
-	<script src="availability.js"></script>
-	<script src="call25.js"></script>
-	<script src="updatePage.js"></script>
+    <script src="ids.js"></script>
+    <script src="availability.js"></script>
+    <script src="call25.js"></script>
+    <script src="updatePage.js"></script>
     <link rel="stylesheet" href="FirstPageStyle.css">
     <link rel="stylesheet" href="AllStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -20,68 +20,74 @@
 
     <div style="background-color:#A20021;color:white;margin:0;height:40vh">
         <h1 style="margin-top:10vh; margin-bottom:0">Study Space Finder</h1>
-        <p style="margin-top:0"> <b> See all currently available classrooms on campus! </b> </p>
+        <p style="margin-top:0"><b> See all currently available classrooms on campus! </b></p>
     </div>
 
-<body>
+    <body>
 
-<section class="flex-container-middle">
-    <p>
-        <button class="theBigButton" id="studyNow" onclick="clickStudyNow()">STUDY NOW</button>
-    </p>
-	
-    <p>
-        <button class="theBigButton" id="studyLater" onclick="clickStudyLater()" disabled>STUDY LATER</button>
-    </p>
+    <section class="flex-container-middle">
+        <p>
+            <button class="theBigButton" id="studyNow" onclick="clickStudyNow()">STUDY NOW</button>
+        </p>
 
-	<p>
-		When do you need to study?
-	</p>
-	<p>
-		<input type="date" name="daySelect" id="daySelect" oninput="document.getElementById('studyLater').disabled = false;">
-		
-		<select id="hourSelect">
-			<option value="00:00">12:00 AM</option>
-			<option value="01:00">1:00 AM</option>
-			<option value="02:00">2:00 AM</option>
-			<option value="03:00">3:00 AM</option>
-			<option value="04:00">4:00 AM</option>
-			<option value="05:00">5:00 AM</option>
-			<option value="06:00">6:00 AM</option>
-			<option value="07:00">7:00 AM</option>
-			<option value="08:00">8:00 AM</option>
-			<option value="09:00">9:00 AM</option>
-			<option value="10:00">10:00 AM</option>
-			<option value="11:00">11:00 AM</option>
-			<option value="12:00">12:00 PM</option>
-			<option value="13:00">1:00 PM</option>
-			<option value="14:00">2:00 PM</option>
-			<option value="15:00">3:00 PM</option>
-			<option value="16:00">4:00 PM</option>
-			<option value="17:00">5:00 PM</option>
-			<option value="18:00">6:00 PM</option>
-			<option value="19:00">7:00 PM</option>
-			<option value="20:00">8:00 PM</option>
-			<option value="21:00">9:00 PM</option>
-			<option value="22:00">10:00 PM</option>
-			<option value="23:00">11:00 PM</option>
-		</select>
-	</p>
-	
-	
+        <p>
+            <button class="theBigButton" id="studyLater" onclick="clickStudyLater()" disabled>STUDY LATER</button>
+        </p>
 
-    <p> Good luck studying! </p>
+        <p>
+            When do you need to study?
+        </p>
 
-</section>
+        <div>
 
-<section class="flex-container-footer">
-    <div class="nav"><a href="aboutUs.html">About Us</a></div>
-    <div class="nav"><a href="http://wpi.libcal.com/spaces?lid=914&gid=2331"> Reserve Library Tech Suite </a></div>
-    <div class="nav"><a href="https://wpi.libcal.com/reserve/fistechsuite"> Reserve a "Foisie" Tech Suite </a></div>
-    <div class="nav"><a href="https://25live.collegenet.com/pro/wpi"> 25 Live </a></div>
-</section>
+            <p>
+                <label for="daySelect"></label><input type="date" name="daySelect" id="daySelect"
+                                                      oninput="document.getElementById('studyLater').disabled = false;">
 
-</body>
+                <label for="hourSelect"></label><select id="hourSelect">
+                    <option value="00:00">12:00 AM</option>
+                    <option value="01:00">1:00 AM</option>
+                    <option value="02:00">2:00 AM</option>
+                    <option value="03:00">3:00 AM</option>
+                    <option value="04:00">4:00 AM</option>
+                    <option value="05:00">5:00 AM</option>
+                    <option value="06:00">6:00 AM</option>
+                    <option value="07:00">7:00 AM</option>
+                    <option value="08:00">8:00 AM</option>
+                    <option value="09:00">9:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="15:00">3:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                    <option value="17:00">5:00 PM</option>
+                    <option value="18:00">6:00 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                    <option value="21:00">9:00 PM</option>
+                    <option value="22:00">10:00 PM</option>
+                    <option value="23:00">11:00 PM</option>
+                </select>
+            </p>
+
+
+            <p> Good luck studying! </p>
+
+
+        </div>
+
+    </section>
+
+    <section class="flex-container-footer">
+        <div class="nav"><a href="aboutUs.html">About Us</a></div>
+        <div class="nav"><a href="http://wpi.libcal.com/spaces?lid=914&gid=2331"> Reserve Library Tech Suite </a></div>
+        <div class="nav"><a href="https://wpi.libcal.com/reserve/fistechsuite"> Reserve a "Foisie" Tech Suite </a></div>
+        <div class="nav"><a href="https://25live.collegenet.com/pro/wpi"> 25 Live </a></div>
+    </section>
+
+    </body>
 
 </div>
 

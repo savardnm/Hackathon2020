@@ -1,5 +1,5 @@
 /*desktop*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 550px) {
 
     .flex-container-footer {
         flex-direction: row;
@@ -97,7 +97,8 @@
 
     .theBigButton {
         width: 100%;
-        height: 20vh;
+        height: 9vh;
+        font-size: large;
     }
 
     .button {
