@@ -31,13 +31,6 @@ button {
 
 }
 
-button:hover {
-    background: #DC9B96;
-}
-
-button:disabled {
-    background: #666666;
-}
 
 table {
     flex-grow: 1;
