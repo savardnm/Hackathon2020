@@ -14,6 +14,11 @@ text {
     font-family: 'Gloria Hallelujah', cursive;
 }
 
+.easterEgg {
+    background-color: #F3752B;
+    color: white;
+    height: 29vh
+}
 
 button:hover {
     background: #DC9B96;
