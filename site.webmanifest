@@ -15,6 +15,6 @@
     ],
     "theme_color": "#f9eae1",
     "background_color": "#f9eae1",
-    "start_url": "https://savardnm.github.io/Hackathon2020/",
+    "start_url": "https://savardnm.github.io/Hackathon2020/index.html",
     "display": "standalone"
 }
