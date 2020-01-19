@@ -1,8 +1,7 @@
 body {
-
-    margin: 0px;
-    background-color: #F9EAE1;
     font-family: 'Gloria Hallelujah', cursive;
+    margin: 0;
+    background-color: #F9EAE1;
 }
 
 h1 {
@@ -15,19 +14,28 @@ text {
     font-family: 'Gloria Hallelujah', cursive;
 }
 
+
+button:hover {
+    background: #DC9B96;
+}
+
+button:disabled {
+    background: #888888;
+}
+
 .nav {
     background-color: #F9EAE1;
     margin: 0;
     text-align: center;
     flex-grow: 1;
-    height:100%
+    height: 100%
 }
 
 .header {
-    background-color:#A20021;
-    color:white;
-    margin:0;
-    height:18vh;
+    background-color: #A20021;
+    color: white;
+    margin: 0;
+    height: 18vh;
 }
 
 .nav:hover {
@@ -38,10 +46,10 @@ text {
     display: block;
 }
 
-.banner{
-    width:100%;
-    background-color:#A20021;
-    height:5vh;
+.banner {
+    width: 100%;
+    background-color: #A20021;
+    height: 5vh;
 
 }
 
