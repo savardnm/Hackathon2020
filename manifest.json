@@ -1,0 +1,16 @@
+{
+  "name": "Study@WPI Study Space Finder",
+  "short_name": "Study@WPI",
+  "start_url": "savardnm.github.io/Hackathon2020",
+  "display": "standalone",
+  "background_color": "#2A3443",
+  "description": "Our 2020 Hackathon App",
+  "theme_color": "#2A3443",
+  "icons": [
+    {
+      "src": "./icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

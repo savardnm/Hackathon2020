@@ -127,3 +127,19 @@ var roomPics = {
     65:"https://25live.collegenet.com/25live/data/wpi/run/image?image_id=27&caller=S25ImageDao.getUrl-pro",
     67:"https://25live.collegenet.com/25live/data/wpi/run/image?image_id=27&width=768&caller=S25ImageDao.getUrl-pro"
 };
+
+window.addEventListener('load', e => {
+    registerSW();
+});
+
+async function registerSW() {
+    if ('serviceWorker' in navigator) {
+        try {
+            await navigator.serviceWorker.register('./sw.js');
+        } catch (e) {
+            alert('ServiceWorker registration failed. Sorry about that.');
+        }
+    } else {
+        document.querySelector('.alert').removeAttribute('hidden');
+    }
+}
