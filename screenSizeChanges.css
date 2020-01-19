@@ -10,6 +10,10 @@
         bottom: 0;
     }
 
+    .flex-container-middle {
+        height: 55vh;
+    }
+
     .nav {
         font-size: 18px;
         width: 25%;
@@ -63,6 +67,7 @@
         padding: 10%;
         flex-wrap: wrap;
         position: static;
+        height:75vh;
 
     }
 
