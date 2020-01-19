@@ -43,10 +43,10 @@ table {
     flex-grow: 1;
     border-collapse: collapse;
     border-spacing: 0;
-    font-size: medium;
+    font-size: large;
     border-radius: 10%;
     padding: 3%;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Patrick Hand', cursive;
 }
 
 td, th {
