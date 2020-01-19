@@ -18,7 +18,6 @@ button {
     margin: 5px;
     color: #442222;
     background: #CC8B86;
-    min-width: 100px;
     min-height: 50px;
 
     border: 0;
@@ -28,12 +27,7 @@ button {
 
 .button {
     margin: 0;
-    display: block;
     height: 100%;
-    width: 50%;
-    justify-content: space-evenly;
-    position: relative;
-    box-sizing: border-box;
 
 }
 
@@ -53,7 +47,6 @@ table {
     border-radius: 10%;
     padding: 3%;
     font-family: 'Gloria Hallelujah', cursive;
-    width: 100%
 }
 
 td, th {
