@@ -25,7 +25,8 @@ button:hover {
 }
 
 button:disabled {
-    background: #888888;
+    background-color: #888888;
+    color:#555555;
 }
 
 .nav {
