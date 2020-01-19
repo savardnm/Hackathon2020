@@ -93,7 +93,7 @@ var roomPics = {
     20: "https://25live.collegenet.com/25live/data/wpi/run/image?image_id=12&caller=S25ImageDao.getUrl-pro",
     21: "https://25live.collegenet.com/25live/data/wpi/run/image?image_id=14&caller=S25ImageDao.getUrl-pro",
     22: "https://25live.collegenet.com/25live/data/wpi/run/image?image_id=87&caller=S25ImageDao.getUrl-pro",
-    25: "https://25live.collegenet.com/25live/data/wpi/run/image?image_id=117&caller=S25ImageDao.getUrl-pro",
+    25: "https://i.groupme.com/1280x720.jpeg.bebe7ba8b14e42d8a82b8ee0b32c6cda",
     26: "https://25live.collegenet.com/25live/data/wpi/run/image?image_id=112&caller=S25ImageDao.getUrl-pro",
     //313:"https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/a8af71b9ae2b3a4c9a40d1e11af692b7/large.png",
     28: "https://25live.collegenet.com/25live/data/wpi/run/image?image_id=116&caller=S25ImageDao.getUrl-pro",
