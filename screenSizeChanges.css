@@ -17,7 +17,7 @@
     }
 
     .blockText {
-
+        height:43vh;
         padding-right: 35%;
         padding-left: 35%;
     }
@@ -100,6 +100,10 @@
         width: 100%;
         height: 8vh;
         font-size: large;
+    }
+
+    .blockText {
+        height:65vh;
     }
 
     .button {
