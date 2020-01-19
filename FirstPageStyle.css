@@ -52,7 +52,7 @@ button:hover {
 
 
 button:disabled {
-	background: #666666
+    background: #666666
 }
 
 .banner {
@@ -60,9 +60,9 @@ button:disabled {
     height: 50px;
 }
 
-.squish{
-    margin:0;
-    padding:0;
-    font-size:75%;
+.squish {
+    margin: 0;
+    padding: 0;
+    font-size: 75%;
 
 }
